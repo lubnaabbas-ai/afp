@@ -10,8 +10,8 @@ $links.click(function(e){
       transform: translatevalue
   });
 
-  clikedLink.addclass("active");
+  clikedLink.addClass("active");
 
 });
 
-$($links[0]).addclass("active");
+$($links[0]).addClass("active");
