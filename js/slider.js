@@ -1,13 +1,13 @@
 var $links = $(".itemLinks");
 
 $links.click(function(e){
-  $links.removeclass("active");
+  $links.removeClass("active");
   var clikedLink = e.target;
-  clikedLink = $(clikedLink);
-  var position = clikedLink.attr("data-pos");
-  var translatevalue = "translate3d ("+ position * 25 +"%, 0px, 0px)";
+  clikedLink = $(clickedLink);
+  var position = clickedLink.attr("data-pos");
+  var translateValue = "translateX ("+ position * 25 +"%, 0px, 0px)";
   $("#wrapper").css({
-      transform: translatevalue
+      transform: translateValue
   });
 
   clikedLink.addClass("active");
